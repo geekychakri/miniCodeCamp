@@ -1,0 +1,32 @@
+{
+  "short_name": "miniCodeCamp",
+  "name": "miniCodeCamp",
+  "description": "Mini Coding Bootcamp",
+  "start_url": "/",
+  "background_color": "#f3eee4",
+  "theme_color": "#ec3944",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icon-256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "icon-384.png",
+      "type": "image/png",
+      "sizes": "384x384"
+    },
+    {
+      "src": "icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
