@@ -432,11 +432,9 @@ body {
 
 .course__resources-heading,
 .course__quiz-heading {
+  display: inline-block;
   font-size: 2rem;
-  text-decoration: underline;
-  text-decoration-color: var(--color-primary);
-  text-decoration-thickness: 10px;
-  text-decoration-skip-ink: none;
+  border-bottom: 10px solid var(--color-primary);
 }
 
 .course__resources-heading {
@@ -897,9 +895,6 @@ body {
     font-size: 3rem;
   }
 
-  .navigation {
-    padding: 0 1rem;
-  }
   .navigation__courses {
     margin: 1rem;
   }

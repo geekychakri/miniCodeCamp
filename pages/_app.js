@@ -38,10 +38,13 @@ function MyApp({ Component, pageProps }) {
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta property="og:title" content="miniCodeCamp" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="" />
+        <meta property="og:url" content="https://minicodecamp.vercel.app/" />
         <meta property="og:description" content="Mini Coding Bootcamp" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="" />
+        <meta
+          name="twitter:image"
+          content="https://minicodecamp.vercel.app/cover.png"
+        />
         <meta name="twitter:title" content="miniCodeCamp" />
         <meta name="twitter:description" content="Mini Coding Bootcamp" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
