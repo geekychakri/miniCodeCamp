@@ -335,10 +335,11 @@ body {
 }
 
 .courses__section-grid {
-  margin: 3rem 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   grid-gap: 4rem;
+  margin: 2rem 0;
+  padding: 0 3rem;
 }
 
 .courses__section-heading {
@@ -781,6 +782,7 @@ body {
   .courses__section-grid {
     grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
     grid-gap: 3rem;
+    padding: 0;
   }
 
   .courses__card {

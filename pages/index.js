@@ -1,5 +1,8 @@
+import { useEffect } from "react";
+
 import Image from "next/image";
 import Link from "next/link";
+import Router from "next/router";
 
 import { useClerk } from "@clerk/clerk-react";
 import { ArrowRight } from "react-feather";
@@ -9,7 +12,12 @@ import YouTubeIcon from "./../public/images/youtube.png";
 
 function Home() {
   const { user } = useClerk();
-  console.log(user);
+
+  useEffect(() => {
+    if (user) {
+      Router.push("/courses");
+    }
+  }, []);
 
   return (
     <>
