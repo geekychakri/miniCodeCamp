@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import Script from "next/script";
 import { useRouter } from "next/router";
 
-import { useClerk } from "@clerk/clerk-react";
+import { useClerk } from "@clerk/nextjs";
 import ReactPlayer from "react-player/youtube";
 import toast, { Toaster } from "react-hot-toast";
 import { ExternalLink } from "react-feather";

@@ -1,9 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 
-import toast, { Toaster } from "react-hot-toast";
 import { User, LogOut, TrendingUp, GitHub } from "react-feather";
-import { useClerk } from "@clerk/clerk-react";
+import { useClerk } from "@clerk/nextjs";
 
 function Navbar() {
   const { user, signOut } = useClerk();
@@ -25,15 +24,6 @@ function Navbar() {
   };
 
   const handleOffline = () => {
-    toast.error("You're Offline !", {
-      duration: 5000,
-      style: {
-        fontSize: "1.2rem",
-        fontWeight: "600",
-        backgroundColor: "#212529",
-        color: "#fff",
-      },
-    });
     setOffline(true);
     console.log("OFFLINE");
   };
@@ -60,7 +50,7 @@ function Navbar() {
       <div className="dropdown" ref={dropDownRef}>
         <div className="dropdown__header" onClick={displayDropDown}>
           <img
-            src={user.externalAccounts[0].picture}
+            src={user.externalAccounts[0].avatarUrl}
             alt="profile-pic"
             className="dropdown__header-img"
             width="100%"
@@ -132,7 +122,6 @@ function Navbar() {
           </div>
         )}
       </div>
-      <Toaster position="bottom-right" />
     </nav>
   );
 }

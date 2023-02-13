@@ -1,4 +1,5 @@
-import { SignIn } from "@clerk/clerk-react";
+import { SignIn } from "@clerk/nextjs";
+
 export default function SignInPage() {
   return <SignIn path="/sign-in" routing="path" />;
 }

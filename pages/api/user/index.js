@@ -1,11 +1,11 @@
-import { requireSession } from "@clerk/clerk-sdk-node";
+import { requireAuth } from "@clerk/nextjs/api";
 
 import { connect } from "../../../utils/db";
 import User from "../../../models/User";
 
 connect();
 
-export default requireSession(async (req, res) => {
+export default requireAuth(async (req, res) => {
   console.log("POST REQUEST 🚀");
   console.log(req.body);
   try {

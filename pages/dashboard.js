@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import { useClerk } from "@clerk/clerk-react";
+import { useClerk } from "@clerk/nextjs";
 import { PDFDocument, rgb, StandardFonts } from "pdf-lib";
 import { saveAs } from "file-saver";
 import { Lock, Unlock } from "react-feather";

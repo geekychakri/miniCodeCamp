@@ -1,11 +1,11 @@
-import { requireSession } from "@clerk/clerk-sdk-node";
+import { requireAuth } from "@clerk/nextjs/api";
 
 import { connect } from "../../../utils/db";
 import User from "../../../models/User";
 
 connect();
 
-export default requireSession(async (req, res) => {
+export default requireAuth(async (req, res) => {
   const { method } = req;
   switch (method) {
     case "GET":

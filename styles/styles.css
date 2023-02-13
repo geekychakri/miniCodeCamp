@@ -611,6 +611,9 @@ body {
   cursor: not-allowed;
 }
 /*CLERK CUSTOM UI*/
+.cl-rootBox {
+  margin: 50px auto;
+}
 
 .cl-component {
   font-size: 16px !important;
@@ -624,8 +627,7 @@ body {
   font-size: 16px !important;
 }
 
-.cl-sign-in,
-.cl-sign-up {
+.cl-internal-1sfvstp {
   background-color: #f3eee4 !important;
   box-shadow: none !important;
 }

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import { useRouter } from "next/router";
-import { useClerk } from "@clerk/clerk-react";
+import { useClerk } from "@clerk/nextjs";
 import { CheckCircle, Youtube } from "react-feather";
 import toast from "react-hot-toast";
 
@@ -20,7 +20,7 @@ function Courses() {
   const router = useRouter();
   const { user } = useClerk();
 
-  console.log(user);
+  console.log({userId: user.id});
   console.log(courses);
 
   const addCourse = async (slug) => {
@@ -39,7 +39,7 @@ function Courses() {
           toast.remove("loading");
           return;
         }
-        console.log("UPDATED COURSES"); //NOTE:
+        console.log("UPDATED COURSES"); 
         // Update the courses array by adding a new course.
         const res = await fetch(`/api/user/${user.id}`, {
           method: "PUT",

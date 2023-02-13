@@ -7,14 +7,12 @@ import {
   SignedIn,
   SignedOut,
   ClerkLoaded,
-} from "@clerk/clerk-react";
+} from "@clerk/nextjs";
 
 import Layout from "../components/Layout";
 
 import "../styles/normalize.css";
 import "../styles/styles.css";
-
-const clerkFrontendAPI = process.env.NEXT_PUBLIC_CLERK_FRONTEND_API;
 
 const publicPages = [
   "/",
@@ -27,10 +25,7 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
   return (
-    <ClerkProvider
-      frontendApi={clerkFrontendAPI}
-      navigate={(to) => router.push(to)}
-    >
+    <ClerkProvider {...pageProps}>
       <Head>
         <meta name="description" content="Mini Coding Bootcamp" />
         <meta name="keywords" content="coding" />

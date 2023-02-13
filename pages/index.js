@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Router from "next/router";
 
-import { useClerk } from "@clerk/clerk-react";
+import { useClerk } from "@clerk/nextjs";
 import { ArrowRight } from "react-feather";
 
 import courseList from "./../data/course-list.json";

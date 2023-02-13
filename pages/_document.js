@@ -12,11 +12,6 @@ class MyDocument extends Document {
             type="font/woff2"
             crossOrigin="anonymous"
           />
-          <script
-            defer
-            data-domain="minicodecamp.vercel.app"
-            src="https://plausible.io/js/plausible.js"
-          ></script>
         </Head>
         <body>
           <Main />

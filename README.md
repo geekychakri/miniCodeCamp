@@ -2,7 +2,7 @@
 
 # miniCodeCamp
 
-A free online mini coding bootcamp 
+A free online mini coding bootcamp
 
 ## Demo
 
@@ -33,8 +33,8 @@ Install dependencies
 Create an .env file in root and add your variables
 
 ```
-  NEXT_PUBLIC_CLERK_FRONTEND_API=
-  CLERK_API_KEY=
+  NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+  CLERK_SECRET_KEY=
   MONGODB_URI=
 ```
 
